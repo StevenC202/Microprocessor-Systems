@@ -6,7 +6,12 @@
  * 
  * @return int      Returns exit-status zero on completion.
  */
-void loop(int pin_number, int sleep_delay) {
+
+
+/** function loop() takes in the pin number and sleep delay as parameters
+ * the loop continuously toggles the LED for a period of time, before toggling again
+ */
+void loop(int pin_number, int sleep_delay) {       
 while (true) {
 
         // Toggle the LED on and then sleep for delay period
@@ -31,7 +36,9 @@ int main() {
     gpio_set_dir(LED_PIN, GPIO_OUT);
 
     // Do forever...
-    loop(LED_PIN, LED_DELAY);
+    loop(LED_PIN, LED_DELAY); // calls the loop function which carries out the blinking operation
+    
+                                
 
     // Should never get here due to infinite while-loop.
     return 0;
