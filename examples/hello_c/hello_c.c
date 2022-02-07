@@ -1,4 +1,4 @@
-//#define WOKWI             // Uncomment if running on Wokwi RP2040 emulator.
+#define WOKWI             // Uncomment if running on Wokwi RP2040 emulator.
 
 #include <stdio.h>
 #include <stdlib.h>
